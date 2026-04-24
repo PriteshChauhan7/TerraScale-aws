@@ -40,7 +40,7 @@ resource "aws_lb" "main" {
 
 # Target Groups 
 
-resource "aws_target_group" "main" {
+resource "aws_lb_target_group" "main" {
     name     = "${var.project_name}-tg"
     port     = 80
     protocol = "HTTP"

@@ -1,6 +1,6 @@
 # Security group for EC2
 
-resource "aws_security_group" "ec2-sg" {
+resource "aws_security_group" "ec2_sg" {
     name = "${var.project_name} - ec2-sg"
     description = "security group for ec2"
     vpc_id = var.vpc_id
