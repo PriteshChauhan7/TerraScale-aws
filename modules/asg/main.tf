@@ -41,7 +41,7 @@ resource "aws_launch_template" "main" {
       associate_public_ip_address = true
       security_groups = [aws_security_group.ec2_sg.id]
     }
-    
+
 user_data = base64encode(<<-EOF
 #!/bin/bash
 yum update -y
@@ -221,7 +221,7 @@ cat > /var/www/html/index.html << HTML
     </header>
 
     <div class="hero">
-        <h1>🚀 Infrastructure is Running!</h1>
+        <h1>TerraScale - Cloud Infrastructure Platform</h1>
         <p>Production-grade 3-tier AWS architecture deployed with Terraform and GitHub Actions CI/CD</p>
     </div>
 
@@ -282,7 +282,7 @@ cat > /var/www/html/index.html << HTML
     </div>
 
     <footer>
-        <p>Built with ❤️ by Pritesh | Powered by AWS + Terraform + GitHub Actions</p>
+        <p>Built by Pritesh | Powered by AWS + Terraform + GitHub Actions</p>
     </footer>
 </body>
 </html>
